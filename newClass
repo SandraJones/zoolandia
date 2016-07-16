@@ -1,0 +1,39 @@
+using System;
+
+namespace zoolandia
+{
+    public interface IAccountSaver
+    {
+        //implements .save fetch
+        bool Save(string account);//saves to a Firebase database
+        string Get();//gets the count back
+        //decide to save it into a cache that implements IAccountSaver you don't have to hit database repeatedly
+    }
+    //DONT DO THIS IN REAL LIFE 
+    public class sqlAccountSaver : IAccountSaver
+    {
+        public bool Save(string account)
+        {
+            //save to sql database
+            return true;
+        }
+        public string Get()
+        {
+            return "Here's the account.";
+        }
+    }
+   
+   
+    public class firebasesqlAccountSaver : IAccountSaver
+    {
+        public bool Save(string account)
+        {
+            //save to Firebase database
+            return true;
+        }
+        public string Get()
+        {
+            return "Here's the account.";
+        }
+    }
+}

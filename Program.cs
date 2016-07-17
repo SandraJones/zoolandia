@@ -9,15 +9,20 @@ namespace zoolandia
         {
             Console.WriteLine("Hello World!");
 
-            AilurusFulgens redPanda = new AilurusFulgens("Steve"); //use class type ANimal instead of a var so you see what class is easily
-            redPanda.Name = "Steve";
-            string response = redPanda.Eat(5);
+            EquusAsinus donkey = new EquusAsinus("Georgio");     //use class type ANimal instead of a var so you see what class is easily
+            
+            donkey.Name = "Georgio";
+            
+            string response = donkey.Eat(4);
 
-            Console.WriteLine(redPanda.Name + " says " + response);
+            Console.WriteLine(donkey.Name + " says " + response);
 
-            AilurusFulgens Joe = new AilurusFulgens("Steve");
-            Console.WriteLine(Joe.Welcome("Joe"));
-            Console.WriteLine(Joe.Name.ToLower());
+            EquusAsinus Maury = new EquusAsinus("Georgio");
+           
+            Console.WriteLine(Maury.Welcome("Maury"));
+           
+            Console.WriteLine(Maury.Name.ToUpper());
+           
             Console.ReadLine(); //makes console wait for you to type another line, so it doesn't close.
 
         }

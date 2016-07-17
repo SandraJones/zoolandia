@@ -9,25 +9,35 @@ namespace zoolandia
             //this is a constuctor
             this.Name = name;
         }
-
-        // public string Name {
-        //     get
-        //     {
-        //             return _name;
-        //        }          
-        // // } {return "haha you can't get your name";}
-
-        // //     set
-        //         {
-        //             _name = value;
-        //         }
-        //     }     
-        //      //these are getters and setters
         private string _name;     
         public string Name {get; set;}
         public virtual string Eat(int numberOfFoods)    
         {
-            return "YUM!";  //if we don't want to return anything then in front of public would be void
+            return "YUM!";  
+        }
+        public string Weight(int weightInPounds)
+        {
+            return "Weigh Me!";
+        }
+        public string Height(int heightInInches)
+        {
+            return "Measure My Height!";
+        }
+        public string MyTypeOfFood(string Food)
+        {
+            return "What do I eat?";
+        }
+        public string LandOrWater(string Habitat)
+        {
+            return "Do I live on land or under water?";
+        }
+        public string VertebrateInvertrebrate(string Vetebrate)
+        {
+            return "Do I have a vertbrae?"; 
+        }
+        public string Appendages(int numberOfAppendages)
+        {
+            return "How many appendages do I have?";
         }
     }
 }

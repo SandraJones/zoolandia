@@ -15,17 +15,17 @@ namespace zoolandia
         {
             return "YUM!";  
         }
-        public string Weight(int weightInPounds)
+        public int Weight(int weightInPounds)
         {
-            return "Weigh Me!";
+            return weightInPounds;
         }
-        public string Height(int heightInInches)
+        public int Height(int heightInInches)
         {
-            return "Measure My Height!";
+            return heightInInches;
         }
         public string MyTypeOfFood(string Food)
         {
-            return "What do I eat?";
+            return Food;
         }
         public string LandOrWater(string Habitat)
         {
@@ -35,9 +35,9 @@ namespace zoolandia
         {
             return "Do I have a vertbrae?"; 
         }
-        public string Appendages(int numberOfAppendages)
+        public int Appendages(int numberOfAppendages)
         {
-            return "How many appendages do I have?";
+            return numberOfAppendages;
         }
     }
 }

@@ -35,6 +35,13 @@ namespace zoolandia
 
             Console.WriteLine("Suzy weighs  "  + response2 + " pounds.");
             Console.WriteLine("Jimbo is " +  response3  +  " inches tall.");
+
+            seaLion.Name = "Galen";
+            string response4 = seaLion.VertebrateInvertrebrate("Yes, I do!");
+
+            
+           
+
     
             
 

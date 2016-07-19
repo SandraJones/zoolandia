@@ -14,13 +14,13 @@ namespace zoolandia.Species
         //parameters below have to have a type, with int  below
         public override string Eat(int numberOfFoods)
         {
-            string animalEat = base.Eat(3); //when you use base it calls the parent class as well
-            return animalEat +  "Nom nom nom";
+            string animalEat = base.Eat(5); //when you use base it calls the parent class as well
+            return animalEat +  "Crunch crunch crunch";
         }
         //this one below doesn't pass in a number of foods
         public string Eat()
         {
-            return "I don't know what I ate.";
+            return "I really like leafy green stuff!";
         }
         public string Welcome(string name)
         {

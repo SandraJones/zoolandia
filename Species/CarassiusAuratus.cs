@@ -15,5 +15,15 @@ namespace zoolandia.Species
         {
             return "Swim";
         }
+        public string Welcome(string name)
+        {
+            this.Name = name;
+            return Welcome();
+        }
+        public string Welcome()
+        {
+            return this.Name;
+        }
+
     }
 }

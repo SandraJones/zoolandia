@@ -36,9 +36,13 @@ namespace zoolandia
             seaLion.Weight = int.Parse(response2);
             Console.WriteLine("Suzy weighs  "  + response2 + " pounds.");
 
-            seaLion.Name = "Galen";
-            string response4 = seaLion.VertebrateInvertrebrate("Yes, I do have a vertebrae!");
+            CarassiusAuratus goldfish = new CarassiusAuratus("Louie");
+            goldfish.Name = "Louie";
+            Console.WriteLine("This goldfish's name is "+ goldfish.Name);
 
+            AilurusFulgens redPanda = new AilurusFulgens("Patty");
+            redPanda.Name = "Patricia";
+            Console.WriteLine("The Red Panda's name is " + redPanda.Name);
            
 
            Console.ReadKey();

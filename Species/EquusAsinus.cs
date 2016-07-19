@@ -29,5 +29,9 @@ namespace zoolandia.Species
         {
             return this.Name;
         }
+        public override string Move()
+        {
+            return "walk or run";
+        }
     }
 }

@@ -15,26 +15,21 @@ namespace zoolandia
         {
             return "YUM!";  
         }
-        public int Weight(int weightInPounds)
+        public int Weight{get; set;}
+        
+        //this is a property or something desccribing it
+        public int Height{get; set;}
+        
+        public virtual string Move()
         {
-            return weightInPounds;
+            return null;
         }
-        public int Height(int heightInInches)
-        {
-            return heightInInches;
-        }
-        public string MyTypeOfFood(string Food)
-        {
-            return Food;
-        }
-        public string LandOrWater(string Habitat)
-        {
-            return "Do I live on land or under water?";
-        }
-        public string VertebrateInvertrebrate(string Vetebrate)
-        {
-            return "Do I have a vertbrae?"; 
-        }
+        public bool CanSwim{get; set;}
+        //since this is uninitialized in land animals that can't swim, then it will default to false
+        public bool Vertebrate{get; set;}
+
+        public bool GillPossession{get; set;}
+        
         public int Appendages(int numberOfAppendages)
         {
             return numberOfAppendages;

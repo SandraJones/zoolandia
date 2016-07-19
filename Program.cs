@@ -15,8 +15,9 @@ namespace zoolandia
             string response = donkey.Eat(4);
             Console.WriteLine(donkey.Name + " says " + response);
             //is this just to rename Georgio or create a new instance of a donkey and name it Maury?
-            EquusAsinus Maury = new EquusAsinus("Georgio");
-            Console.WriteLine(Maury.Welcome("Maury"));
+            //classname is the type, variable name, and set it as null with just ; or initialize or instantiate a new animal 
+            EquusAsinus Maury = new EquusAsinus("Maury");
+            Console.WriteLine(Maury.Welcome("Georgio"));
             Console.WriteLine(Maury.Name.ToUpper());
            
             Console.ReadLine(); //makes console wait for you to type another line, so it doesn't close.
@@ -25,29 +26,22 @@ namespace zoolandia
             elephant.Name = "Jimbo";
             Console.WriteLine("What is the height of Jimbo?");
             string response3 = Console.ReadLine();
-
+            elephant.Height = int.Parse(response3);
+            Console.WriteLine(elephant.Name + "'s height is  " + elephant.Height);
 
             Otariinae seaLion = new Otariinae("Suzy");
             seaLion.Name = "Suzy";
             Console.WriteLine("What is Suzy's weight?");
             string response2 = Console.ReadLine();
-            //question why can't I do int response2?
-
+            seaLion.Weight = int.Parse(response2);
             Console.WriteLine("Suzy weighs  "  + response2 + " pounds.");
-            Console.WriteLine("Jimbo is " +  response3  +  " inches tall.");
 
             seaLion.Name = "Galen";
-            string response4 = seaLion.VertebrateInvertrebrate("Yes, I do!");
+            string response4 = seaLion.VertebrateInvertrebrate("Yes, I do have a vertebrae!");
 
-            
            
 
-    
-            
-
-            
-
- 
+           Console.ReadKey();
 
         }
     }

@@ -5,8 +5,9 @@ namespace zoolandia.Species
     //this is a sea lion
     public class Otariinae : Animal
     {
-               public Otariinae(string name): base(name)
+        public Otariinae(string name): base(name)
         {   
+            this.Vertebrate = true;
         }
         public override string Eat(int numberOfFoods)
         {
@@ -18,6 +19,13 @@ namespace zoolandia.Species
         {
             return "I don't know what I ate.";
         }
+        public override string Move()
+        {
+            return "Flop or Swim";
+        }
+
+
+
         public string Welcome(string name)
         {
             this.Name = name;

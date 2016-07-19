@@ -2,25 +2,18 @@ using System;
 
 namespace zoolandia.Species
 {
-    //this is a goldfish; can the public class be two separate words?
+    //this is a goldfish; can the public class be two separate words?no
     public class CarassiusAuratus: Animal
     {
         public CarassiusAuratus(string name): base(name)
         {
+            this.CanSwim = true;
+            this.GillPossession = true;
+            this.Vertebrate = true;
         }
-        //was trying to use a boolean, but couldn't quite figure it out
-        public string Swim(string Yes)      
+        public override string Move()
         {
-            return "Yes, I can swim.";
-        }
-        public string GillPossession(string Yes)
-        {
-            return "I need gills to 'breathe'.";
-        }
-        public string Tail(string Yes)
-        {
-            return "My tail helps me to swim.";
+            return "Swim";
         }
     }
-
 }

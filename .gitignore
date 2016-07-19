@@ -3,3 +3,5 @@ bin/
 obj/
 project.lock.json
 newClass
+AbstractAnimal.cs
+NotesProgram.cs

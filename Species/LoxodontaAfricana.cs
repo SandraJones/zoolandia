@@ -31,10 +31,10 @@ namespace zoolandia.Species
         {
             return this.Name;
         }
+
         public override string Move()
         {
             return "walk on four legs";
         }
-
     }
 }

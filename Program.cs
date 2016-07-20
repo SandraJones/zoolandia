@@ -44,7 +44,15 @@ namespace zoolandia
             redPanda.Name = "Patricia";
             Console.WriteLine("The Red Panda's name is " + redPanda.Name);
            
+            elephant.Name = "Jimbo";
+            Console.WriteLine("The elephant's name is " + elephant.Name + ".");
 
+            seaLion.Name = "Suzy";
+            Console.WriteLine("The sea lion's name is  " + seaLion.Name + ".");
+
+            donkey.Name = "Georgio";
+            Console.WriteLine("The donkey's name is " + donkey.Name + ".");
+            
            Console.ReadKey();
 
         }

@@ -2,7 +2,7 @@ using System;
 
 namespace zoolandia.Species
 {
-    public class AilurusFulgens : Animal
+    public class AilurusFulgens : Genus
     {
         //have to have a basic constructor string name is Joe or Steve, and calls base constructor
         public AilurusFulgens(string name): base(name)

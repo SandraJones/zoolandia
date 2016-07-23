@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //this is a sea lion
-    public class Otariinae : Animal
+    public class Otariinae : Genus
     {
         public Otariinae(string name): base(name)
         {   

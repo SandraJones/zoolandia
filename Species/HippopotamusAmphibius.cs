@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //hippo
-    public class HippopotamusAmphibius: Animal
+    public class HippopotamusAmphibius: Genus
     {
         public HippopotamusAmphibius(string name): base(name)
         {

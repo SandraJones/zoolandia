@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //dolphins
-    public class Cephalorhynchus: Animal
+    public class Cephalorhynchus: Genus
     {
         public Cephalorhynchus(string name): base(name)
         {

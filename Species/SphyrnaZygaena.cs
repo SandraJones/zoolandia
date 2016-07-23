@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //hammerhead shark
-    public class SphyrnaZygaena: Animal
+    public class SphyrnaZygaena: Genus
     {
         public SphyrnaZygaena(string name): base(name)
         {

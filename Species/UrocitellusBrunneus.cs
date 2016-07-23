@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //squirrel
-    public class UroceitellusBrunneus: Animal
+    public class UroceitellusBrunneus: Genus
     {
         public UroceitellusBrunneus(string name): base(name)
         {
@@ -13,4 +13,3 @@ namespace zoolandia.Species
         }
     }
 }
-

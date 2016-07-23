@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //possum
-    public class TrichosurusCaninus: Animal
+    public class TrichosurusCaninus: Genus
     {
         public TrichosurusCaninus(string name): base(name)
         {

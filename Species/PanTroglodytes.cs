@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //chimpanzee
-    public class PanTroglodytes: Animal
+    public class PanTroglodytes: Genus
     {
         public PanTroglodytes(string name): base(name)
         {

@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //dairy cow
-    public class BosTaurus : Animal
+    public class BosTaurus : Genus
     {
         public BosTaurus(string name) : base(name)
         {

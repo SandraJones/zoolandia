@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //jaguar
-    public class PantheraOnca: Animal
+    public class PantheraOnca: Genus
     {
         public PantheraOnca(string name): base(name)
         {

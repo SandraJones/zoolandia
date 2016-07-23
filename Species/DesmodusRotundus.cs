@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //vampire bat
-    public class DesmodusRotundis: Animal
+    public class DesmodusRotundis: Genus
     {
         public DesmodusRotundis(string name): base(name)
         {

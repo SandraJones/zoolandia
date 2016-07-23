@@ -3,7 +3,7 @@ using System;
 namespace zoolandia.Species
 {
     //this is a goldfish; can the public class be two separate words?no
-    public class CarassiusAuratus: Animal
+    public class CarassiusAuratus: Genus
     {
         public CarassiusAuratus(string name): base(name)
         {

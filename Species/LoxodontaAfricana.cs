@@ -2,7 +2,7 @@ using System;
 
 namespace zoolandia.Species
 {
-    public class LoxodontaAfricana : Animal
+    public class LoxodontaAfricana : Genus
     {
         //have to have a basic constructor string name is Joe or Steve, and calls base constructor
         public LoxodontaAfricana(string name): base(name)

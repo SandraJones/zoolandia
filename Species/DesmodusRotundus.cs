@@ -2,15 +2,14 @@ using System;
 
 namespace zoolandia.Species
 {
-    //hippo
-    public class HippopotamusAmphibius: Animal
+    //vampire bat
+    public class DesmodusRotundis: Animal
     {
-        public HippopotamusAmphibius(string name): base(name)
+        public DesmodusRotundis(string name): base(name)
         {
-            this.CanSwim = true;
+            this.CanSwim = false;
             this.GillPossession = false;
             this.Vertebrate = true;
         }
     }
-
 }

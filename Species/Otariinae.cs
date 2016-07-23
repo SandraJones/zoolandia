@@ -24,8 +24,6 @@ namespace zoolandia.Species
             return "Flop or Swim";
         }
 
-
-
         public string Welcome(string name)
         {
             this.Name = name;

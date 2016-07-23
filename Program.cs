@@ -52,7 +52,12 @@ namespace zoolandia
 
             donkey.Name = "Georgio";
             Console.WriteLine("The donkey's name is " + donkey.Name + ".");
+
+            LoxodontaAfricana newElephant = new LoxodontaAfricana("Zuzu");
+            Console.WriteLine(newElephant.Name);
+
             
+
            Console.ReadKey();
 
         }

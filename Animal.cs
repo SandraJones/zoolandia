@@ -19,7 +19,7 @@ namespace zoolandia
         
         //this is a property or something desccribing it
         public int Height{get; set;}
-        
+        // public int PlaysWFriends(int, NoOfFriends);
         public virtual string Move()
         {
             return null;

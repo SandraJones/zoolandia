@@ -1,14 +1,15 @@
 using System;
-
+using zoolandia.Genus;
+//genus Equus
 namespace zoolandia.Species
 {
-    public class AilurusFulgens : Genus
+    public class Asinus : Equus
     {
         //have to have a basic constructor string name is Joe or Steve, and calls base constructor
-        public AilurusFulgens(string name): base(name)
+        public Asinus(string name): base(name)
         {
-            //don't need to do this.name here becasue we are calling the base constructor or parent class we are inheriting from
-            //need to 
+            this.LowPredation = true;
+            this.FoodLocation = "ground";
         }
         //we have access to name and Eat is a virutal program
         //parameters below have to have a type, with int  below
@@ -31,5 +32,10 @@ namespace zoolandia.Species
         {
             return this.Name;
         }
+        public override string Move()
+        {
+            return "walk or run";
+        }
+        public 
     }
 }

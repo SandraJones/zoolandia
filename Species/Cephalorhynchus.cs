@@ -1,16 +1,17 @@
 using System;
 
-namespace zoolandia.Species
+namespace zoolandia.Genus
 {
     //dolphins
-    public class Cephalorhynchus: Genus
+    public class Cephalorhynchus: Animal
     {
         public Cephalorhynchus(string name): base(name)
         {
-            this.CanSwim = true;
-            this.GillPossession = false;
-            this.Vertebrate = true;
+            this.Name = name;
         }
+        public bool IsSocial{get; set;}
+        public bool BreathesAir{get; set;}
+        
     }
 
 }

@@ -2,10 +2,10 @@ using System;
 
 namespace zoolandia.Species
 {
-    public class LoxodontaAfricana : Genus
+    public class Africana : Loxodonta
     {
         //have to have a basic constructor string name is Joe or Steve, and calls base constructor
-        public LoxodontaAfricana(string name): base(name)
+        public Africana(string name): base(name)
         {
             //don't need to do this.name here becasue we are calling the base constructor or parent class we are inheriting from
             //need to 

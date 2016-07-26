@@ -1,11 +1,12 @@
 using System;
-
+using zoolandia.Genus;
+//is in the genus Trichosurus
 namespace zoolandia.Species
 {
-    //dairy cow
-    public class BosTaurus : Genus
+    //possum
+    public class Caninus: Trichosurus
     {
-        public BosTaurus(string name) : base(name)
+        public Caninus(string name): base(name)
         {
             this.CanSwim = false;
             this.GillPossession = false;
@@ -13,3 +14,5 @@ namespace zoolandia.Species
         }
     }
 }
+
+

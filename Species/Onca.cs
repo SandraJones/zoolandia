@@ -1,11 +1,12 @@
 using System;
-
+using zoolandia.Genus;
+//genus Panthera
 namespace zoolandia.Species
 {
-    //chimpanzee
-    public class PanTroglodytes: Genus
+    //jaguar
+    public class Onca: Panthera
     {
-        public PanTroglodytes(string name): base(name)
+        public Onca(string name): base(name)
         {
             this.CanSwim = true;
             this.GillPossession = false;
@@ -13,4 +14,3 @@ namespace zoolandia.Species
         }
     }
 }
-

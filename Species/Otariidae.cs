@@ -1,18 +1,21 @@
 using System;
+using zoolandia.Genus;
 
 namespace zoolandia.Species
 {
-    public class EquusAsinus : Genus
+    //this is a sea lion
+    public class Otariidae : Zalophus
     {
-        //have to have a basic constructor string name is Joe or Steve, and calls base constructor
-        public EquusAsinus(string name): base(name)
-        {
+        public Otariidae(string name): base(name)
+        {   
+            this.Vertebrate = true;
+            this.HighPredation = true;
+            this.HatesToLieInSun = false;
+            this.CanSwim = true;
         }
-        //we have access to name and Eat is a virutal program
-        //parameters below have to have a type, with int  below
         public override string Eat(int numberOfFoods)
         {
-            string animalEat = base.Eat(3); //when you use base it calls the parent class as well
+            string animalEat = base.Eat(2); //when you use base it calls the parent class as well
             return animalEat +  "Nom nom nom";
         }
         //this one below doesn't pass in a number of foods
@@ -20,6 +23,11 @@ namespace zoolandia.Species
         {
             return "I don't know what I ate.";
         }
+        public override string Move()
+        {
+            return "Flop or Swim";
+        }
+
         public string Welcome(string name)
         {
             this.Name = name;
@@ -28,10 +36,6 @@ namespace zoolandia.Species
         public string Welcome()
         {
             return this.Name;
-        }
-        public override string Move()
-        {
-            return "walk or run";
         }
     }
 }

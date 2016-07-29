@@ -10,5 +10,6 @@ namespace zoolandia.Genus
         }
         public bool LowPredation{get; set;}
         public string FoodLocation{get; set;} 
+       
     }
 }

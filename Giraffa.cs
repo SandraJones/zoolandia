@@ -1,4 +1,4 @@
-//genus for giraffe
+//genus for giraffa and species Camelopardalis
 using System;
 
 namespace zoolandia.Genus

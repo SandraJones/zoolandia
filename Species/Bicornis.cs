@@ -14,7 +14,7 @@ namespace zoolandia.Species
         }
          public bool HasAHorn = true;
          public bool RoughHide = true;
-         public string color(string)
+         public string color(string color)
          {
              return "black";
          }

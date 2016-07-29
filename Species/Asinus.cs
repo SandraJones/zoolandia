@@ -36,6 +36,5 @@ namespace zoolandia.Species
         {
             return "walk or run";
         }
-        public 
     }
-}
+}   

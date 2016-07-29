@@ -5,7 +5,7 @@ namespace zoolandia.Species
 {
     public class Jubatus: Acinonyx
     {
-        public Acinonyx(string name): base(name)
+        public Jubatus(string name): base(name)
         {
             this.Name = name;
         }

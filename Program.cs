@@ -9,41 +9,37 @@ namespace zoolandia
         {
             Console.WriteLine("Zoolandia!");
 
-            EquusAsinus donkey = new EquusAsinus("Georgio");     //use class type ANimal instead of a var so you see what class is easily
+            Asinus donkey = new Asinus("Georgio");     //use class type ANimal instead of a var so you see what class is easily
             
             donkey.Name = "Georgio";
             string response = donkey.Eat(4);
             Console.WriteLine(donkey.Name + " says " + response);
             //is this just to rename Georgio or create a new instance of a donkey and name it Maury?
             //classname is the type, variable name, and set it as null with just ; or initialize or instantiate a new animal 
-            EquusAsinus Maury = new EquusAsinus("Maury");
+            Asinus Maury = new Asinus("Maury");
             Console.WriteLine(Maury.Welcome("Georgio"));
             Console.WriteLine(Maury.Name.ToUpper());
            
             Console.ReadLine(); //makes console wait for you to type another line, so it doesn't close.
 
-            LoxodontaAfricana elephant = new LoxodontaAfricana("Jimbo");
+            Africana elephant = new Africana("Jimbo");
             elephant.Name = "Jimbo";
             Console.WriteLine("What is the height of Jimbo?");
             string response3 = Console.ReadLine();
             elephant.Height = int.Parse(response3);
             Console.WriteLine(elephant.Name + "'s height is  " + elephant.Height);
 
-            Otariinae seaLion = new Otariinae("Suzy");
+            Otariidae seaLion = new Otariidae("Suzy");
             seaLion.Name = "Suzy";
             Console.WriteLine("What is Suzy's weight?");
             string response2 = Console.ReadLine();
             seaLion.Weight = int.Parse(response2);
             Console.WriteLine("Suzy weighs  "  + response2 + " pounds.");
 
-            CarassiusAuratus goldfish = new CarassiusAuratus("Louie");
+            Auratus goldfish = new Auratus("Louie");
             goldfish.Name = "Louie";
             Console.WriteLine("This goldfish's name is "+ goldfish.Name);
-
-            AilurusFulgens redPanda = new AilurusFulgens("Patty");
-            redPanda.Name = "Patricia";
-            Console.WriteLine("The Red Panda's name is " + redPanda.Name);
-           
+          
             elephant.Name = "Jimbo";
             Console.WriteLine("The elephant's name is " + elephant.Name + ".");
 
@@ -53,13 +49,10 @@ namespace zoolandia
             donkey.Name = "Georgio";
             Console.WriteLine("The donkey's name is " + donkey.Name + ".");
 
-            LoxodontaAfricana newElephant = new LoxodontaAfricana("Zuzu");
+            Africana newElephant = new Africana("Zuzu");
             Console.WriteLine(newElephant.Name);
 
-            
-
-           Console.ReadKey();
-
+            Console.ReadKey();
         }
     }
 }

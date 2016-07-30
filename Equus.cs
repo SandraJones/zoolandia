@@ -1,11 +1,11 @@
-//genus Panthera  is for jaguar Panthera Onca
+//genus for Equus Asinus or Donkey
 using System;
 
 namespace zoolandia.Genus
 {
-    public class Panthera : Animal, IAmbulatory
+    public class Equus : Animal, IAmbulatory
     {
-        public Panthera(string name): base(name)
+        public Equus(string name): base(name)
         {
             this.Name = name;
         }
@@ -13,11 +13,11 @@ namespace zoolandia.Genus
         public string FoodLocation{get; set;}
         public void run()
         {
-            Console.WriteLine("Panthera Genus is running!");
+            Console.WriteLine("Animal is now running!");
         }
         public void walk()
         {
-            Console.WriteLine("Panthera Genus is walking.");
+            Console.WriteLine("Animal is now walking.");
         }
     }
 }

@@ -3,7 +3,7 @@ using System;
 
 namespace zoolandia.Genus
 {
-    public class Acinonyx : Animal
+    public class Acinonyx : Animal, IAmbulatory
     {
         public Acinonyx(string name): base(name)
         {
@@ -11,5 +11,13 @@ namespace zoolandia.Genus
         }
         public bool RunsFast{get; set;}
         public string HasCamoColoring{get; set;}
+        public void run()
+        {
+            Console.WriteLine("Animal is running!");
+        }
+        public void walk()
+        {
+            Console.WriteLine("Animal is now walking.");
+        }
     }
 }

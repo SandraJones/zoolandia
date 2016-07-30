@@ -2,7 +2,7 @@ using System;
 //genus of sea lion otariidae species
 namespace zoolandia.Genus
 {
-    public class Zalophus: Animal
+    public class Zalophus: Animal, IAmbulatory
     {
         public Zalophus(string name): base(name)
         {
@@ -10,5 +10,13 @@ namespace zoolandia.Genus
         }
         public bool HighPredation = true;
         public bool HatesToLieInSun = false; 
+        public void run()
+        {
+            Console.WriteLine("Zalophus Genus is running!");
+        }
+        public void walk()
+        {
+            Console.WriteLine("Zalophus Genus is walking.");
+        }
     }
 }

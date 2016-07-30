@@ -3,7 +3,7 @@ using System;
 
 namespace zoolandia.Genus
 {
-    public class Desmodus: Animal
+    public class Desmodus: Animal, IFlying
     {
         public Desmodus(string name): base(name)
         {
@@ -11,6 +11,13 @@ namespace zoolandia.Genus
         }
         public bool FeedsInDaytime = false;
         public int NoOfWings{get; set;}
-        
+        public void fly()
+        {
+            Console.WriteLine("Desmodus is flying!");
+        }
+        public void land()
+        {
+            Console.WriteLine("Desmodus has landed.");
+        }
     }
 }

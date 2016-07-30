@@ -1,13 +1,32 @@
 using System;
 using zoolandia;
+using zoolandia.Species;
 
-public class Forest: Habitat, IForestHabitat
-{  
-    public Aquarium (string name, bool isSaltwater)
-    {
-        _saltwater = isSaltwater;
-        this.public_name = name;
+namespace zoolandia.Forest
+{
+    public class Forest: Habitat, IForestHabitat
+    {  
+        public bool livesInTrees()
+        {
+            return true;
+        }
+        public string feeding()
+        {
+            return "Eats items in trees or on the ground in the forest.";
+        }
     }
-    private bool ForestEnclosure = true;
-    private bool _saltwater = false;
+    public void ForestInhabitants(Africana x, Amphibius y, Bicornis z, Brunneus aa, Caninus bb, Asinus cc, Onca dd, Pardus ee, Rotundis ff, Taurus gg, Troglodytes hh)
+    {
+        this.inhabitants.Add(x);
+        this.inhabitants.Add(y)
+        this.inhabitants.Add(z);
+        this.inhabitants.Add(aa);    
+        this.inhabitants.Add(bb);
+        this.inhabitants.Add(cc); 
+        this.inhabitants.Add(dd);
+        this.inhabitants.Add(ee);
+        this.inhabitants.Add(ff);
+        this.inhabitants.Add(gg);
+        this.inhabitants.Add(hh);
+    }    
 }

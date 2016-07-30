@@ -1,0 +1,13 @@
+using System;
+using zoolandia;
+
+public class Forest: Habitat, IForestHabitat
+{  
+    public Aquarium (string name, bool isSaltwater)
+    {
+        _saltwater = isSaltwater;
+        this.public_name = name;
+    }
+    private bool ForestEnclosure = true;
+    private bool _saltwater = false;
+}

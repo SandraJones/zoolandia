@@ -1,5 +1,6 @@
 ﻿using System;
 using zoolandia.Species;
+using System.Collections.Generic;
 
 namespace zoolandia
 {
@@ -51,6 +52,12 @@ namespace zoolandia
 
             Africana newElephant = new Africana("Zuzu");
             Console.WriteLine(newElephant.Name);
+
+            List<String> inhabitants = new List<String>();
+            foreach(var name in inhabitants)
+            {
+                Console.WriteLine(name);
+            };
 
             Console.ReadKey();
         }
